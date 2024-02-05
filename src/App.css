@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+body{
+    
+    background: radial-gradient(ellipse at center, #ffc200 0%, #e0ad00 100%)
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
 }
+.heading{
+    font-size: 72px;
+  background: -webkit-linear-gradient(#f38484, #281e1e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: Zoom-in 5s infinite;
+  position: relative;
 
-.App-link {
-  color: #61dafb;
 }
+@keyframes Zoom-in{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+.card{
+    background: linear-gradient(240deg, rgba(2,0,36,1) 0%, rgba(206,122,26,1) 76%, rgba(53,150,170,1) 100%);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+input{
+    padding: 10px;
+    border: 4px solid red;
+}
+.playlist-heading{
+    color: rgb(253, 228, 6);
+    text-align: center;
+    margin-top: 4px;
 }
